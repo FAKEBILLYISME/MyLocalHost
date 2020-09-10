@@ -23,5 +23,9 @@ def login():
 def user(usr):
 	return f"<h1></h1>"
 
+@app.route("/latest")
+def latest():
+	return render_template('latest.html')
+
 if __name__ == "__main__":
 	app.run(debug=True, host="0.0.0.0", port=60)
